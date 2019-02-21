@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Ini Nama"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/sub"
+            android:layout_below="@+id/tvnama_alat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="4pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id Product"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:textSize="4pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Calibration"
+                android:padding="2dp"
+                android:gravity="right"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sub2"
+            android:layout_below="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvIdItem"
+                android:textSize="6pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ini ID Produk"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvLastCalibration"
+                android:textSize="6pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ini Last Calibration"
+                android:padding="5dp"
+                android:gravity="right"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_below="@id/sub2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
